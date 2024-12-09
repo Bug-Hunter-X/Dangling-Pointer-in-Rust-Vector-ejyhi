@@ -1,0 +1,3 @@
+# Dangling Pointer in Rust Vector
+
+This repository demonstrates a common error in Rust involving dangling pointers when working with vectors. The `bug.rs` file shows code that leads to undefined behavior because a reference to a vector element becomes invalid after the vector's capacity is exceeded and it is reallocated. The `bugSolution.rs` shows how to fix this by using techniques like cloning or iterators.
